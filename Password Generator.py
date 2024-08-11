@@ -28,7 +28,4 @@ def password_generator():
     return "".join(password)
 
 
-
-  
-    
-    
+print(password_generator())
