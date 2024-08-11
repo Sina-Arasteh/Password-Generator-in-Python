@@ -2,17 +2,15 @@ from random import choice, randint
 
 
 lowercase_letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
 uppercase_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-
 symbols = ['`', '~', '@', '#', '%', '^', '*', '-', '_', '=', '!', '$', '&', '(', ')', '+', '{', '}', '[', ']', '|', '\\', ':', ';', '/', '"', "'", '<', '>', '?', '.']
 
 
+len_of_password = int(input("Enter the length of your desired password: "))
 password = []
 def password_generator():
-    for i in range(1, 17):
+    for i in range(1, len_of_password+1):
         random_num = randint(1, 4)
         if random_num == 1:
             l1 = choice(lowercase_letters)
