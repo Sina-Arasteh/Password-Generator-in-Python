@@ -13,7 +13,7 @@ symbols = ['`', '~', '@', '#', '%', '^', '*', '-', '_', '=', '!', '$', '&', '(',
 password = []
 def password_generator():
     for i in range(1, 17):
-        random_num = randint(1, 5)
+        random_num = randint(1, 4)
         if random_num == 1:
             l1 = choice(lowercase_letters)
             password.append(l1)
@@ -25,6 +25,7 @@ def password_generator():
             password.append(n3)
         else:
             s4 = choice(symbols)
+            password.append(s4)
     return "".join(password)
 
 
